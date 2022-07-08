@@ -1,16 +1,31 @@
-# like_button_flutter
+# Animated Heart Tap Widget
+Like Button is a flutter library that allows you to create a button with animation effects similar to Twitter's heart when you like something and animation effects to increase like count.
+## Result
+<p>
+<img src="https://github.com/Vishwa-Karthik/Instagram-Like-Button/blob/master/giff.gif" width=200 height:400 />
+</p>
 
-A new Flutter project.
+## Code
+```dart
+Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          "ANIMATED HEART TAP",
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+      ),
+      // ignore: prefer_const_constructors
+      body: Center(
+        // ignore: prefer_const_constructors
+        child: LikeButton(
+          size: 100,
+          likeCount: 3000,
+          countPostion: CountPostion.bottom,
+        ),
+      ),
+    );
+```
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Refernce
+Pub.dev: [like_button](https://pub.dev/packages/like_button)
